@@ -6,7 +6,7 @@
 
 ```bash
 pip install cookiecutter
-cookiecutter https://github.com/meechanic/greetpy-cc
+cookiecutter git@github.com:meechanic/pythonstart-cc.git
 ```
 
 ## Лицензия
