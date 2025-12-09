@@ -1,0 +1,11 @@
+{
+  "project_name": "My Python Package",
+  "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '-').replace('_', '-') }}",
+  "package_name": "{{ cookiecutter.project_slug.replace('-', '_') }}",
+  "script_name": "run_{{ cookiecutter.package_name }}",
+  "author": "Your Name",
+  "email": "your.email@example.com",
+  "description": "A short description of your package",
+  "python_version": "3.6",
+  "version": "0.1.0"
+}
