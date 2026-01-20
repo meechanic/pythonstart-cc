@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "{{ cookiecutter.project_slug }}"
+version = "{{ cookiecutter.version }}"
+description = "{{ cookiecutter.description }}"
+readme = "README.md"
+authors = [
+    {name = "{{ cookiecutter.author }}", email = "{{ cookiecutter.email }}"}
+]
+license = {text = "MIT"}
+keywords = []
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+urls = {Homepage = "https://github.com/{{ cookiecutter.author }}/{{ cookiecutter.project_slug }}"}
+requires-python = ">=3.10"
+
+dependencies = [
+    "demopkg==0.0.1"
+]
+
+[project.scripts]
+{{ cookiecutter.script_name }} = "{{ cookiecutter.package_name }}.cli:main"
+
+[project.optional-dependencies]
+dev = [
+    "setuptools>=42",
+    "wheel",
+    "twine>=4.0.0",
+    "build",
+    "pytest>=7.0.0"
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+packages = ["{{ cookiecutter.package_name }}"]
+include-package-data = true

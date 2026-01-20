@@ -1,14 +1,14 @@
 # Cookiecutter Pythonstart
 
-Минимальный шаблон Python-пакета.
+Minimal Python-package template.
 
-## Использование
+## Usage
 
 ```bash
 pip install cookiecutter
 cookiecutter git@github.com:meechanic/pythonstart-cc.git
 ```
 
-## Лицензия
+## License
 
 MIT

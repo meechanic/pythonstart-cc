@@ -2,18 +2,32 @@
 
 {{ cookiecutter.description }}
 
-## Установка
+## Installation
 
-```bash
+```
 pip install .
 ```
 
-## Использование
+## Usage
 
-```bash
+```
 {{ cookiecutter.script_name }}.py
 ```
 
-## Лицензия
+## License
 
 MIT
+
+## Notes for developers
+
+```
+make install-dev
+# write code with tests
+make test
+# do more changes
+make clean
+make reinstall-dev
+...
+# up version in the setup.py
+make upload
+```
