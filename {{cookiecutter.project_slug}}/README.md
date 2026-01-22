@@ -11,7 +11,7 @@ pip install .
 ## Usage
 
 ```
-{{ cookiecutter.script_name }}.py
+{{ cookiecutter.script_name }}
 ```
 
 ## License
